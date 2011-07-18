@@ -1,0 +1,1085 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+=============================================================================
+ Brief   : XML file with data types and functions
+ Authors : Francisco Gouveia <fgouveia@av.it.pt>
+ 
+ Information Retreiver Module for PAPOX (Policy Administration Point for
+ Oasis XACML)
+
+ Copyright (C) 2011 Universidade Aveiro
+ Copyright (C) 2011 Instituto de Telecomunicações - Pólo Aveiro
+ Copyright (C) 2011 Portugal Telecom Inovação
+
+ This software is distributed under a license. The full license
+ agreement can be found in the file LICENSE in this distribution.
+ This software may not be copied, modified, sold or distributed
+ other than expressed in the named license agreement.
+
+ This software is distributed without any warranty.
+=============================================================================
+-->
+<att:All xsi:schemaLocation="pt:fg:xacml:config:supported ../schema/Attributes.xsd" xmlns:att="pt:fg:xacml:config:supported" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <att:Category Name="Functions">
+        <att:Description/>
+        <att:Element ShortName="string-equal">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:string-equal</att:FullName>
+        </att:Element>
+        <att:Element ShortName="boolean-equal">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:boolean-equal</att:FullName>
+        </att:Element>
+        <att:Element ShortName="integer-equal">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:integer-equal</att:FullName>
+        </att:Element>
+        <att:Element ShortName="double-equal">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:double-equal</att:FullName>
+        </att:Element>
+        <att:Element ShortName="date-equal">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:date-equal</att:FullName>
+        </att:Element>
+        <att:Element ShortName="time-equal">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:time-equal</att:FullName>
+        </att:Element>
+        <att:Element ShortName="dateTime-equal">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:dateTime-equal</att:FullName>
+        </att:Element>
+        <att:Element ShortName="dayTimeDuration-equal">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:3.0:function:dayTimeDuration-equal</att:FullName>
+        </att:Element>
+        <att:Element ShortName="yearMonthDuration-equal">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:3.0:function:yearMonthDuration-equal</att:FullName>
+        </att:Element>
+        <att:Element ShortName="string-equal-ignore-case">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:3.0:function:string-equal-ignore-case</att:FullName>
+        </att:Element>
+        <att:Element ShortName="anyURI-equal">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:anyURI-equal</att:FullName>
+        </att:Element>
+        <att:Element ShortName="x500Name-equal">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:x500Name-equal</att:FullName>
+        </att:Element>
+        <att:Element ShortName="rfc822Name-equal">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:rfc822Name-equal</att:FullName>
+        </att:Element>
+        <att:Element ShortName="hexBinary-equal">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:hexBinary-equal</att:FullName>
+        </att:Element>
+        <att:Element ShortName="base64Binary-equal">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:base64Binary-equal</att:FullName>
+        </att:Element>
+        <att:Element ShortName="integer-add">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:integer-add</att:FullName>
+        </att:Element>
+        <att:Element ShortName="double-add">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:double-add</att:FullName>
+        </att:Element>
+        <att:Element ShortName="integer-subtract">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:integer-subtract</att:FullName>
+        </att:Element>
+        <att:Element ShortName="double-subtract">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:double-subtract</att:FullName>
+        </att:Element>
+        <att:Element ShortName="integer-multiply">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:integer-multiply</att:FullName>
+        </att:Element>
+        <att:Element ShortName="double-multiply">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:double-multiply</att:FullName>
+        </att:Element>
+        <att:Element ShortName="integer-divide">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:integer-divide</att:FullName>
+        </att:Element>
+        <att:Element ShortName="double-divide">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:double-divide</att:FullName>
+        </att:Element>
+        <att:Element ShortName="integer-mod">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:integer-mod</att:FullName>
+        </att:Element>
+        <att:Element ShortName="integer-abs">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:integer-abs</att:FullName>
+        </att:Element>
+        <att:Element ShortName="double-abs">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:double-abs</att:FullName>
+        </att:Element>
+        <att:Element ShortName="round">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:round</att:FullName>
+        </att:Element>
+        <att:Element ShortName="floor">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:floor</att:FullName>
+        </att:Element>
+        <att:Element ShortName="string-normalize-space">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:string-normalize-space</att:FullName>
+        </att:Element>
+        <att:Element ShortName="string-normalize-to-lower-case">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:string-normalize-to-lower-case</att:FullName>
+        </att:Element>
+        <att:Element ShortName="double-to-integer">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:double-to-integer</att:FullName>
+        </att:Element>
+        <att:Element ShortName="integer-to-double">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:integer-to-double</att:FullName>
+        </att:Element>
+        <att:Element ShortName="or">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:or</att:FullName>
+        </att:Element>
+        <att:Element ShortName="and">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:and</att:FullName>
+        </att:Element>
+        <att:Element ShortName="n-of">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:n-of</att:FullName>
+        </att:Element>
+        <att:Element ShortName="not">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:not</att:FullName>
+        </att:Element>
+        <att:Element ShortName="integer-greater-than">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:integer-greater-than</att:FullName>
+        </att:Element>
+        <att:Element ShortName="integer-greater-than-or-equal">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:integer-greater-than-or-equal</att:FullName>
+        </att:Element>
+        <att:Element ShortName="integer-less-than">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:integer-less-than</att:FullName>
+        </att:Element>
+        <att:Element ShortName="integer-less-than-or-equal">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:integer-less-than-or-equal</att:FullName>
+        </att:Element>
+        <att:Element ShortName="double-greater-than">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:double-greater-than</att:FullName>
+        </att:Element>
+        <att:Element ShortName="double-greater-than-or-equal">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:double-greater-than-or-equal</att:FullName>
+        </att:Element>
+        <att:Element ShortName="double-less-than">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:double-less-than</att:FullName>
+        </att:Element>
+        <att:Element ShortName="double-less-than-or-equal">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:double-less-than-or-equal</att:FullName>
+        </att:Element>
+        <att:Element ShortName="dateTime-add-dayTimeDuration">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:3.0:function:dateTime-add-dayTimeDuration</att:FullName>
+        </att:Element>
+        <att:Element ShortName="dateTime-add-yearMonthDuration">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:3.0:function:dateTime-add-yearMonthDuration</att:FullName>
+        </att:Element>
+        <att:Element ShortName="dateTime-subtract-dayTimeDuration">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:3.0:function:dateTime-subtract-dayTimeDuration</att:FullName>
+        </att:Element>
+        <att:Element ShortName="dateTime-subtract-yearMonthDuration">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:3.0:function:dateTime-subtract-yearMonthDuration</att:FullName>
+        </att:Element>
+        <att:Element ShortName="date-add-yearMonthDuration">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:3.0:function:date-add-yearMonthDuration</att:FullName>
+        </att:Element>
+        <att:Element ShortName="date-subtract-yearMonthDuration">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:3.0:function:date-subtract-yearMonthDuration</att:FullName>
+        </att:Element>
+        <att:Element ShortName="string-greater-than">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:string-greater-than</att:FullName>
+        </att:Element>
+        <att:Element ShortName="string-greater-than-or-equal">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:string-greater-than-or-equal</att:FullName>
+        </att:Element>
+        <att:Element ShortName="string-less-than">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:string-less-than</att:FullName>
+        </att:Element>
+        <att:Element ShortName="string-less-than-or-equal">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:string-less-than-or-equal</att:FullName>
+        </att:Element>
+        <att:Element ShortName="time-greater-than">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:time-greater-than</att:FullName>
+        </att:Element>
+        <att:Element ShortName="time-greater-than-or-equal">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:time-greater-than-or-equal</att:FullName>
+        </att:Element>
+        <att:Element ShortName="time-less-than">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:time-less-than</att:FullName>
+        </att:Element>
+        <att:Element ShortName="time-less-than-or-equal">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:time-less-than-or-equal</att:FullName>
+        </att:Element>
+        <att:Element ShortName="time-in-range">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:2.0:function:time-in-range</att:FullName>
+        </att:Element>
+        <att:Element ShortName="dateTime-greater-than">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:dateTime-greater-than</att:FullName>
+        </att:Element>
+        <att:Element ShortName="dateTime-greater-than-or-equal">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:dateTime-greater-than-or-equal</att:FullName>
+        </att:Element>
+        <att:Element ShortName="dateTime-less-than">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:dateTime-less-than</att:FullName>
+        </att:Element>
+        <att:Element ShortName="dateTime-less-than-or-equal">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:dateTime-less-than-or-equal</att:FullName>
+        </att:Element>
+        <att:Element ShortName="date-greater-than">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:date-greater-than</att:FullName>
+        </att:Element>
+        <att:Element ShortName="date-greater-than-or-equal">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:date-greater-than-or-equal</att:FullName>
+        </att:Element>
+        <att:Element ShortName="date-less-than">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:date-less-than</att:FullName>
+        </att:Element>
+        <att:Element ShortName="date-less-than-or-equal">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:date-less-than-or-equal</att:FullName>
+        </att:Element>
+        <att:Element ShortName="string-one-and-only">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:string-one-and-only</att:FullName>
+        </att:Element>
+        <att:Element ShortName="string-bag-size">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:string-bag-size</att:FullName>
+        </att:Element>
+        <att:Element ShortName="string-is-in">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:string-is-in</att:FullName>
+        </att:Element>
+        <att:Element ShortName="string-bag">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:string-bag</att:FullName>
+        </att:Element>
+        <att:Element ShortName="boolean-one-and-only">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:boolean-one-and-only</att:FullName>
+        </att:Element>
+        <att:Element ShortName="boolean-bag-size">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:boolean-bag-size</att:FullName>
+        </att:Element>
+        <att:Element ShortName="boolean-is-in">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:boolean-is-in</att:FullName>
+        </att:Element>
+        <att:Element ShortName="boolean-bag">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:boolean-bag</att:FullName>
+        </att:Element>
+        <att:Element ShortName="integer-one-and-only">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:integer-one-and-only</att:FullName>
+        </att:Element>
+        <att:Element ShortName="integer-bag-size">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:integer-bag-size</att:FullName>
+        </att:Element>
+        <att:Element ShortName="integer-is-in">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:integer-is-in</att:FullName>
+        </att:Element>
+        <att:Element ShortName="integer-bag">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:integer-bag</att:FullName>
+        </att:Element>
+        <att:Element ShortName="double-one-and-only">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:double-one-and-only</att:FullName>
+        </att:Element>
+        <att:Element ShortName="double-bag-size">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:double-bag-size</att:FullName>
+        </att:Element>
+        <att:Element ShortName="double-is-in">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:double-is-in</att:FullName>
+        </att:Element>
+        <att:Element ShortName="double-bag">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:double-bag</att:FullName>
+        </att:Element>
+        <att:Element ShortName="time-one-and-only">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:time-one-and-only</att:FullName>
+        </att:Element>
+        <att:Element ShortName="time-bag-size">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:time-bag-size</att:FullName>
+        </att:Element>
+        <att:Element ShortName="time-is-in">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:time-is-in</att:FullName>
+        </att:Element>
+        <att:Element ShortName="time-bag">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:time-bag</att:FullName>
+        </att:Element>
+        <att:Element ShortName="date-one-and-only">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:date-one-and-only</att:FullName>
+        </att:Element>
+        <att:Element ShortName="date-bag-size">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:date-bag-size</att:FullName>
+        </att:Element>
+        <att:Element ShortName="date-is-in">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:date-is-in</att:FullName>
+        </att:Element>
+        <att:Element ShortName="date-bag">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:date-bag</att:FullName>
+        </att:Element>
+        <att:Element ShortName="dateTime-one-and-only">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:dateTime-one-and-only</att:FullName>
+        </att:Element>
+        <att:Element ShortName="dateTime-bag-size">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:dateTime-bag-size</att:FullName>
+        </att:Element>
+        <att:Element ShortName="dateTime-is-in">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:dateTime-is-in</att:FullName>
+        </att:Element>
+        <att:Element ShortName="dateTime-bag">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:dateTime-bag</att:FullName>
+        </att:Element>
+        <att:Element ShortName="anyURI-one-and-only">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:anyURI-one-and-only</att:FullName>
+        </att:Element>
+        <att:Element ShortName="anyURI-bag-size">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:anyURI-bag-size</att:FullName>
+        </att:Element>
+        <att:Element ShortName="anyURI-is-in">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:anyURI-is-in</att:FullName>
+        </att:Element>
+        <att:Element ShortName="anyURI-bag">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:anyURI-bag</att:FullName>
+        </att:Element>
+        <att:Element ShortName="hexBinary-one-and-only">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:hexBinary-one-and-only</att:FullName>
+        </att:Element>
+        <att:Element ShortName="hexBinary-bag-size">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:hexBinary-bag-size</att:FullName>
+        </att:Element>
+        <att:Element ShortName="hexBinary-is-in">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:hexBinary-is-in</att:FullName>
+        </att:Element>
+        <att:Element ShortName="hexBinary-bag">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:hexBinary-bag</att:FullName>
+        </att:Element>
+        <att:Element ShortName="base64Binary-one-and-only">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:base64Binary-one-and-only</att:FullName>
+        </att:Element>
+        <att:Element ShortName="base64Binary-bag-size">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:base64Binary-bag-size</att:FullName>
+        </att:Element>
+        <att:Element ShortName="base64Binary-is-in">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:base64Binary-is-in</att:FullName>
+        </att:Element>
+        <att:Element ShortName="base64Binary-bag">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:base64Binary-bag</att:FullName>
+        </att:Element>
+        <att:Element ShortName="dayTimeDuration-one-and-only">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:dayTimeDuration-one-and-only</att:FullName>
+        </att:Element>
+        <att:Element ShortName="dayTimeDuration-bag-size">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:dayTimeDuration-bag-size</att:FullName>
+        </att:Element>
+        <att:Element ShortName="dayTimeDuration-is-in">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:dayTimeDuration-is-in</att:FullName>
+        </att:Element>
+        <att:Element ShortName="dayTimeDuration-bag">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:dayTimeDuration-bag</att:FullName>
+        </att:Element>
+        <att:Element ShortName="yearMonthDuration-one-and-only">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:yearMonthDuration-one-and-only</att:FullName>
+        </att:Element>
+        <att:Element ShortName="yearMonthDuration-bag-size">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:yearMonthDuration-bag-size</att:FullName>
+        </att:Element>
+        <att:Element ShortName="yearMonthDuration-is-in">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:yearMonthDuration-is-in</att:FullName>
+        </att:Element>
+        <att:Element ShortName="yearMonthDuration-bag">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:yearMonthDuration-bag</att:FullName>
+        </att:Element>
+        <att:Element ShortName="x500Name-one-and-only">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:x500Name-one-and-only</att:FullName>
+        </att:Element>
+        <att:Element ShortName="x500Name-bag-size">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:x500Name-bag-size</att:FullName>
+        </att:Element>
+        <att:Element ShortName="x500Name-is-in">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:x500Name-is-in</att:FullName>
+        </att:Element>
+        <att:Element ShortName="x500Name-bag">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:x500Name-bag</att:FullName>
+        </att:Element>
+        <att:Element ShortName="rfc822Name-one-and-only">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:rfc822Name-one-and-only</att:FullName>
+        </att:Element>
+        <att:Element ShortName="rfc822Name-bag-size">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:rfc822Name-bag-size</att:FullName>
+        </att:Element>
+        <att:Element ShortName="rfc822Name-is-in">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:rfc822Name-is-in</att:FullName>
+        </att:Element>
+        <att:Element ShortName="rfc822Name-bag">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:rfc822Name-bag</att:FullName>
+        </att:Element>
+        <att:Element ShortName="ipAddress-one-and-only">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:2.0:function:ipAddress-one-and-only</att:FullName>
+        </att:Element>
+        <att:Element ShortName="ipAddress-bag-size">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:2.0:function:ipAddress-bag-size</att:FullName>
+        </att:Element>
+        <att:Element ShortName="ipAddress-is-in">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:2.0:function:ipAddress-is-in</att:FullName>
+        </att:Element>
+        <att:Element ShortName="ipAddress-bag">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:2.0:function:ipAddress-bag</att:FullName>
+        </att:Element>
+        <att:Element ShortName="dnsName-one-and-only">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:2.0:function:dnsName-one-and-only</att:FullName>
+        </att:Element>
+        <att:Element ShortName="dnsName-bag-size">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:2.0:function:dnsName-bag-size</att:FullName>
+        </att:Element>
+        <att:Element ShortName="dnsName-is-in">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:2.0:function:dnsName-is-in</att:FullName>
+        </att:Element>
+        <att:Element ShortName="dnsName-bag">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:2.0:function:dnsName-bag</att:FullName>
+        </att:Element>
+        <att:Element ShortName="string-concatenate">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:2.0:function:string-concatenate</att:FullName>
+        </att:Element>
+        <att:Element ShortName="boolean-from-string">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:3.0:function:boolean-from-string</att:FullName>
+        </att:Element>
+        <att:Element ShortName="string-from-boolean">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:3.0:function:string-from-boolean</att:FullName>
+        </att:Element>
+        <att:Element ShortName="integer-from-string">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:3.0:function:integer-from-string</att:FullName>
+        </att:Element>
+        <att:Element ShortName="string-from-integer">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:3.0:function:string-from-integer</att:FullName>
+        </att:Element>
+        <att:Element ShortName="double-from-string">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:3.0:function:double-from-string</att:FullName>
+        </att:Element>
+        <att:Element ShortName="string-from-double">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:3.0:function:string-from-double</att:FullName>
+        </att:Element>
+        <att:Element ShortName="time-from-string">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:3.0:function:time-from-string</att:FullName>
+        </att:Element>
+        <att:Element ShortName="string-from-time">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:3.0:function:string-from-time</att:FullName>
+        </att:Element>
+        <att:Element ShortName="date-from-string">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:3.0:function:date-from-string</att:FullName>
+        </att:Element>
+        <att:Element ShortName="string-from-date">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:3.0:function:string-from-date</att:FullName>
+        </att:Element>
+        <att:Element ShortName="dateTime-from-string">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:3.0:function:dateTime-from-string</att:FullName>
+        </att:Element>
+        <att:Element ShortName="string-from-dateTime">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:3.0:function:string-from-dateTime</att:FullName>
+        </att:Element>
+        <att:Element ShortName="anyURI-from-string">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:3.0:function:anyURI-from-string</att:FullName>
+        </att:Element>
+        <att:Element ShortName="string-from-anyURI">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:3.0:function:string-from-anyURI</att:FullName>
+        </att:Element>
+        <att:Element ShortName="dayTimeDuration-from-string">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:3.0:function:dayTimeDuration-from-string</att:FullName>
+        </att:Element>
+        <att:Element ShortName="string-from-dayTimeDuration">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:3.0:function:string-from-dayTimeDuration</att:FullName>
+        </att:Element>
+        <att:Element ShortName="yearMonthDuration-from-string">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:3.0:function:yearMonthDuration-from-string</att:FullName>
+        </att:Element>
+        <att:Element ShortName="string-from-yearMonthDuration">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:3.0:function:string-from-yearMonthDuration</att:FullName>
+        </att:Element>
+        <att:Element ShortName="x500Name-from-string">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:3.0:function:x500Name-from-string</att:FullName>
+        </att:Element>
+        <att:Element ShortName="string-from-x500Name">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:3.0:function:string-from-x500Name</att:FullName>
+        </att:Element>
+        <att:Element ShortName="rfc822Name-from-string">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:3.0:function:rfc822Name-from-string</att:FullName>
+        </att:Element>
+        <att:Element ShortName="string-from-rfc822Name">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:3.0:function:string-from-rfc822Name</att:FullName>
+        </att:Element>
+        <att:Element ShortName="ipAddress-from-string">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:3.0:function:ipAddress-from-string</att:FullName>
+        </att:Element>
+        <att:Element ShortName="string-from-ipAddress">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:3.0:function:string-from-ipAddress</att:FullName>
+        </att:Element>
+        <att:Element ShortName="dnsName-from-string">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:3.0:function:dnsName-from-string</att:FullName>
+        </att:Element>
+        <att:Element ShortName="string-from-dnsName">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:3.0:function:string-from-dnsName</att:FullName>
+        </att:Element>
+        <att:Element ShortName="string-starts-with">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:3.0:function:string-starts-with</att:FullName>
+        </att:Element>
+        <att:Element ShortName="anyURI-starts-with">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:3.0:function:anyURI-starts-with</att:FullName>
+        </att:Element>
+        <att:Element ShortName="string-ends-with">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:3.0:function:string-ends-with</att:FullName>
+        </att:Element>
+        <att:Element ShortName="anyURI-ends-with">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:3.0:function:anyURI-ends-with</att:FullName>
+        </att:Element>
+        <att:Element ShortName="string-contains">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:3.0:function:string-contains</att:FullName>
+        </att:Element>
+        <att:Element ShortName="anyURI-contains">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:3.0:function:anyURI-contains</att:FullName>
+        </att:Element>
+        <att:Element ShortName="string-substring">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:3.0:function:string-substring</att:FullName>
+        </att:Element>
+        <att:Element ShortName="anyURI-substring">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:3.0:function:anyURI-substring</att:FullName>
+        </att:Element>
+        <att:Element ShortName="any-of">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:any-of</att:FullName>
+        </att:Element>
+        <att:Element ShortName="all-of">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:all-of</att:FullName>
+        </att:Element>
+        <att:Element ShortName="any-of-any">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:any-of-any</att:FullName>
+        </att:Element>
+        <att:Element ShortName="all-of-any">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:all-of-any</att:FullName>
+        </att:Element>
+        <att:Element ShortName="any-of-all">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:any-of-all</att:FullName>
+        </att:Element>
+        <att:Element ShortName="all-of-all">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:all-of-all</att:FullName>
+        </att:Element>
+        <att:Element ShortName="map">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:map</att:FullName>
+        </att:Element>
+        <att:Element ShortName="x500Name-match">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:x500Name-match</att:FullName>
+        </att:Element>
+        <att:Element ShortName="rfc822Name-match">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:rfc822Name-match</att:FullName>
+        </att:Element>
+        <att:Element ShortName="string-regexp-match">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:string-regexp-match</att:FullName>
+        </att:Element>
+        <att:Element ShortName="anyURI-regexp-match">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:2.0:function:anyURI-regexp-match</att:FullName>
+        </att:Element>
+        <att:Element ShortName="ipAddress-regexp-match">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:2.0:function:ipAddress-regexp-match</att:FullName>
+        </att:Element>
+        <att:Element ShortName="dnsName-regexp-match">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:2.0:function:dnsName-regexp-match</att:FullName>
+        </att:Element>
+        <att:Element ShortName="rfc822Name-regexp-match">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:2.0:function:rfc822Name-regexp-match</att:FullName>
+        </att:Element>
+        <att:Element ShortName="x500Name-regexp-match">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:2.0:function:x500Name-regexp-match</att:FullName>
+        </att:Element>
+        <att:Element ShortName="xpath-node-countO">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:3.0:function:xpath-node-countO</att:FullName>
+        </att:Element>
+        <att:Element ShortName="xpath-node-equalO">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:3.0:function:xpath-node-equalO</att:FullName>
+        </att:Element>
+        <att:Element ShortName="xpath-node-matchO">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:3.0:function:xpath-node-matchO</att:FullName>
+        </att:Element>
+        <att:Element ShortName="string-intersection">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:string-intersection</att:FullName>
+        </att:Element>
+        <att:Element ShortName="string-at-least-one-member-of">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:string-at-least-one-member-of</att:FullName>
+        </att:Element>
+        <att:Element ShortName="string-union">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:string-union</att:FullName>
+        </att:Element>
+        <att:Element ShortName="string-subset">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:string-subset</att:FullName>
+        </att:Element>
+        <att:Element ShortName="string-set-equals">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:string-set-equals</att:FullName>
+        </att:Element>
+        <att:Element ShortName="boolean-intersection">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:boolean-intersection</att:FullName>
+        </att:Element>
+        <att:Element ShortName="boolean-at-least-one-member-of">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:boolean-at-least-one-member-of</att:FullName>
+        </att:Element>
+        <att:Element ShortName="boolean-union">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:boolean-union</att:FullName>
+        </att:Element>
+        <att:Element ShortName="boolean-subset">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:boolean-subset</att:FullName>
+        </att:Element>
+        <att:Element ShortName="boolean-set-equals">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:boolean-set-equals</att:FullName>
+        </att:Element>
+        <att:Element ShortName="integer-intersection">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:integer-intersection</att:FullName>
+        </att:Element>
+        <att:Element ShortName="integer-at-least-one-member-of">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:integer-at-least-one-member-of</att:FullName>
+        </att:Element>
+        <att:Element ShortName="integer-union">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:integer-union</att:FullName>
+        </att:Element>
+        <att:Element ShortName="integer-subset">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:integer-subset</att:FullName>
+        </att:Element>
+        <att:Element ShortName="integer-set-equals">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:integer-set-equals</att:FullName>
+        </att:Element>
+        <att:Element ShortName="double-intersection">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:double-intersection</att:FullName>
+        </att:Element>
+        <att:Element ShortName="double-at-least-one-member-of">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:double-at-least-one-member-of</att:FullName>
+        </att:Element>
+        <att:Element ShortName="double-union">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:double-union</att:FullName>
+        </att:Element>
+        <att:Element ShortName="double-subset">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:double-subset</att:FullName>
+        </att:Element>
+        <att:Element ShortName="double-set-equals">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:double-set-equals</att:FullName>
+        </att:Element>
+        <att:Element ShortName="time-intersection">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:time-intersection</att:FullName>
+        </att:Element>
+        <att:Element ShortName="time-at-least-one-member-of">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:time-at-least-one-member-of</att:FullName>
+        </att:Element>
+        <att:Element ShortName="time-union">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:time-union</att:FullName>
+        </att:Element>
+        <att:Element ShortName="time-subset">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:time-subset</att:FullName>
+        </att:Element>
+        <att:Element ShortName="time-set-equals">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:time-set-equals</att:FullName>
+        </att:Element>
+        <att:Element ShortName="date-intersection">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:date-intersection</att:FullName>
+        </att:Element>
+        <att:Element ShortName="date-at-least-one-member-of">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:date-at-least-one-member-of</att:FullName>
+        </att:Element>
+        <att:Element ShortName="date-union">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:date-union</att:FullName>
+        </att:Element>
+        <att:Element ShortName="date-subset">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:date-subset</att:FullName>
+        </att:Element>
+        <att:Element ShortName="date-set-equals">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:date-set-equals</att:FullName>
+        </att:Element>
+        <att:Element ShortName="dateTime-intersection">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:dateTime-intersection</att:FullName>
+        </att:Element>
+        <att:Element ShortName="dateTime-at-least-one-member-of">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:dateTime-at-least-one-member-of</att:FullName>
+        </att:Element>
+        <att:Element ShortName="dateTime-union">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:dateTime-union</att:FullName>
+        </att:Element>
+        <att:Element ShortName="dateTime-subset">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:dateTime-subset</att:FullName>
+        </att:Element>
+        <att:Element ShortName="dateTime-set-equals">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:dateTime-set-equals</att:FullName>
+        </att:Element>
+        <att:Element ShortName="anyURI-intersection">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:anyURI-intersection</att:FullName>
+        </att:Element>
+        <att:Element ShortName="anyURI-at-least-one-member-of">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:anyURI-at-least-one-member-of</att:FullName>
+        </att:Element>
+        <att:Element ShortName="anyURI-union">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:anyURI-union</att:FullName>
+        </att:Element>
+        <att:Element ShortName="anyURI-subset">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:anyURI-subset</att:FullName>
+        </att:Element>
+        <att:Element ShortName="anyURI-set-equals">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:anyURI-set-equals</att:FullName>
+        </att:Element>
+        <att:Element ShortName="hexBinary-intersection">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:hexBinary-intersection</att:FullName>
+        </att:Element>
+        <att:Element ShortName="hexBinary-at-least-one-member-of">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:hexBinary-at-least-one-member-of</att:FullName>
+        </att:Element>
+        <att:Element ShortName="hexBinary-union">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:hexBinary-union</att:FullName>
+        </att:Element>
+        <att:Element ShortName="hexBinary-subset">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:hexBinary-subset</att:FullName>
+        </att:Element>
+        <att:Element ShortName="hexBinary-set-equals">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:hexBinary-set-equals</att:FullName>
+        </att:Element>
+        <att:Element ShortName="base64Binary-intersection">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:base64Binary-intersection</att:FullName>
+        </att:Element>
+        <att:Element ShortName="base64Binary-at-least-one-member-of">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:base64Binary-at-least-one-member-of</att:FullName>
+        </att:Element>
+        <att:Element ShortName="base64Binary-union">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:base64Binary-union</att:FullName>
+        </att:Element>
+        <att:Element ShortName="base64Binary-subset">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:base64Binary-subset</att:FullName>
+        </att:Element>
+        <att:Element ShortName="base64Binary-set-equals">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:base64Binary-set-equals</att:FullName>
+        </att:Element>
+        <att:Element ShortName="dayTimeDuration-intersection">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:dayTimeDuration-intersection</att:FullName>
+        </att:Element>
+        <att:Element ShortName="dayTimeDuration-at-least-one-member-of">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:dayTimeDuration-at-least-one-member-of</att:FullName>
+        </att:Element>
+        <att:Element ShortName="dayTimeDuration-union">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:dayTimeDuration-union</att:FullName>
+        </att:Element>
+        <att:Element ShortName="dayTimeDuration-subset">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:dayTimeDuration-subset</att:FullName>
+        </att:Element>
+        <att:Element ShortName="dayTimeDuration-set-equals">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:dayTimeDuration-set-equals</att:FullName>
+        </att:Element>
+        <att:Element ShortName="yearMonthDuration-intersection">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:yearMonthDuration-intersection</att:FullName>
+        </att:Element>
+        <att:Element ShortName="yearMonthDuration-at-least-one-member-of">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:yearMonthDuration-at-least-one-member-of</att:FullName>
+        </att:Element>
+        <att:Element ShortName="yearMonthDuration-union">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:yearMonthDuration-union</att:FullName>
+        </att:Element>
+        <att:Element ShortName="yearMonthDuration-subset">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:yearMonthDuration-subset</att:FullName>
+        </att:Element>
+        <att:Element ShortName="yearMonthDuration-set-equals">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:yearMonthDuration-set-equals</att:FullName>
+        </att:Element>
+        <att:Element ShortName="x500Name-intersection">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:x500Name-intersection</att:FullName>
+        </att:Element>
+        <att:Element ShortName="x500Name-at-least-one-member-of">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:x500Name-at-least-one-member-of</att:FullName>
+        </att:Element>
+        <att:Element ShortName="x500Name-union">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:x500Name-union</att:FullName>
+        </att:Element>
+        <att:Element ShortName="x500Name-subset">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:function:x500Name-subset</att:FullName>
+        </att:Element>
+    </att:Category>
+    <att:Category Name="DataTypes">
+        <att:Description/>
+        <att:Element ShortName="string">
+            <att:Description/>
+            <att:FullName>http://www.w3.org/2001/XMLSchema#string</att:FullName>
+        </att:Element>
+        <att:Element ShortName="boolean">
+            <att:Description/>
+            <att:FullName>http://www.w3.org/2001/XMLSchema#boolean</att:FullName>
+        </att:Element>
+        <att:Element ShortName="integer">
+            <att:Description/>
+            <att:FullName>http://www.w3.org/2001/XMLSchema#integer</att:FullName>
+        </att:Element>
+        <att:Element ShortName="double">
+            <att:Description/>
+            <att:FullName>http://www.w3.org/2001/XMLSchema#double</att:FullName>
+        </att:Element>
+        <att:Element ShortName="time">
+            <att:Description/>
+            <att:FullName>http://www.w3.org/2001/XMLSchema#time</att:FullName>
+        </att:Element>
+        <att:Element ShortName="date">
+            <att:Description/>
+            <att:FullName>http://www.w3.org/2001/XMLSchema#date</att:FullName>
+        </att:Element>
+        <att:Element ShortName="dateTime">
+            <att:Description/>
+            <att:FullName>http://www.w3.org/2001/XMLSchema#dateTime</att:FullName>
+        </att:Element>
+        <att:Element ShortName="anyURI">
+            <att:Description/>
+            <att:FullName>http://www.w3.org/2001/XMLSchema#anyURI</att:FullName>
+        </att:Element>
+        <att:Element ShortName="hexBinary">
+            <att:Description/>
+            <att:FullName>http://www.w3.org/2001/XMLSchema#hexBinary</att:FullName>
+        </att:Element>
+        <att:Element ShortName="base64Binary">
+            <att:Description/>
+            <att:FullName>http://www.w3.org/2001/XMLSchema#base64Binary</att:FullName>
+        </att:Element>
+        <att:Element ShortName="dayTimeDuration">
+            <att:Description/>
+            <att:FullName>http://www.w3.org/TR/2002/WD-xquery-operators-20020816#dayTimeDuration</att:FullName>
+        </att:Element>
+        <att:Element ShortName="yearMonthDuration">
+            <att:Description/>
+            <att:FullName>http://www.w3.org/TR/2002/WD-xquery-operators-20020816#yearMonthDuration</att:FullName>
+        </att:Element>
+        <att:Element ShortName="x500Name">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:data-type:x500Name</att:FullName>
+        </att:Element>
+        <att:Element ShortName="rfc822Name">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:1.0:data-type:rfc822Name</att:FullName>
+        </att:Element>
+        <att:Element ShortName="ipAddress">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:2.0:data-type:ipAddress</att:FullName>
+        </att:Element>
+        <att:Element ShortName="dnsName">
+            <att:Description/>
+            <att:FullName>urn:oasis:names:tc:xacml:2.0:data-type:dnsName</att:FullName>
+        </att:Element>
+    </att:Category>
+</att:All>
