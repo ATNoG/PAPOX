@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : modules_schema.xml
+    Created on : 2 de Março de 2011, 17:52
+    Author     : Francisco Alexandre de Gouveia
+    Description:
+        Configuration file for external modules.
+-->
+
+<ns0:Modules  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+   xmlns:ns0='pt.fg.classfactory.modules'
+   xsi:schemaLocation='pt.fg.classfactory.modules schema.xsd'>
+    <PolicyRetreiver name="pt.fg.xacml.bdbxml.policyretreiver.PolicyRetreiver">Retreives policies from a native database (Oracle Barkeley DBXML).</PolicyRetreiver>
+</ns0:Modules>

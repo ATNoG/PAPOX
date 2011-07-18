@@ -1,0 +1,77 @@
+/*
+//=============================================================================
+// Brief   : Stylesheet for the XACML element nodes
+// Authors : Francisco Gouveia <fgouveia@av.it.pt>
+//-----------------------------------------------------------------------------
+// PAPOX (Policy Administration Point for OASIS XACML) - Presentation Layer
+//
+// Copyright (C) 2011 Universidade Aveiro
+// Copyright (C) 2011 Instituto de Telecomunicações - Pólo Aveiro
+// Copyright (C) 2011 Portugal Telecom Inovação
+//
+// This software is distributed under a license. The full license
+// agreement can be found in the file LICENSE in this distribution.
+// This software may not be copied, modified, sold or distributed
+// other than expressed in the named license agreement.
+//
+// This software is distributed without any warranty.
+//=============================================================================
+*/
+
+/* 
+    Document   : xacml
+    Created on : 23/Mai/2011, 20:37:06
+    Author     : Francisco Alexandre de Gouveia
+    Description:
+        Style for XACML specific elements.
+*/
+body>#windowContainer>.window>.content div.xacmlMatch {
+    text-align: center;
+    max-height:70px;
+    display:inline-block;
+    overflow:hidden;
+    margin:3px;
+    cursor:help;
+}
+
+body>#windowContainer>.window>.content div.xacmlMatch>img {
+    margin:0px;
+    padding:0px;
+    min-height:50px;
+    display:block;
+}
+
+body>#windowContainer>.window>.content div.xacmlMatch>t {
+    display:block;
+    margin:0px;
+    padding:0px;
+    font-size:12px;
+}
+
+
+body>#windowContainer>.window>.content div.xacmlTarget {
+    border-left-color: red;
+    border-left-style: solid;
+    border-left-width: 2px;
+    border-top-width:2px;
+    margin:2px;
+    margin-left:4px;
+}
+
+body>#windowContainer>.window>.content div.xacmlAnyOf {
+    border-left-color: green;
+    border-left-style: solid;
+    border-left-width: 2px;
+    border-top-width:2px;
+    margin:2px;
+    margin-left:4px;
+}
+
+body>#windowContainer>.window>.content div.xacmlAllOf {
+    border-left-color: red;
+    border-left-style: solid;
+    border-left-width: 2px;
+    border-top-width:2px;
+    margin:2px;
+    margin-left:4px;
+}

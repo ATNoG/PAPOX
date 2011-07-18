@@ -1,0 +1,201 @@
+/*
+//=============================================================================
+// Brief   : Stylesheet for the web page of PAPOX
+// Authors : Francisco Gouveia <fgouveia@av.it.pt>
+//-----------------------------------------------------------------------------
+// PAPOX (Policy Administration Point for OASIS XACML) - Presentation Layer
+//
+// Copyright (C) 2011 Universidade Aveiro
+// Copyright (C) 2011 Instituto de Telecomunicações - Pólo Aveiro
+// Copyright (C) 2011 Portugal Telecom Inovação
+//
+// This software is distributed under a license. The full license
+// agreement can be found in the file LICENSE in this distribution.
+// This software may not be copied, modified, sold or distributed
+// other than expressed in the named license agreement.
+//
+// This software is distributed without any warranty.
+//=============================================================================
+*/
+
+/*
+    Document   : style
+    Created on : 25/Abr/2011, 10:12:34
+    Author     : Francisco Alexandre de Gouveia
+    Description:
+        Styles to define the template of Policy Administration Point, using a container with windows.
+*/
+
+a {
+	color: gray;
+}
+
+a:hover{
+	color: lightgray;
+}
+
+
+html, body {
+	margin:0px;
+	padding:0px;
+	height: 100%;
+}
+
+body>table {
+	margin:0px;
+	padding:0px;
+	width:100%;
+	height:100%;
+}
+
+body>table tr{
+	vertical-align: top;
+}
+
+#top {
+	height: 30px;
+
+	padding:10px;
+	
+	border-bottom-style: solid;
+	border-bottom-color: gray;
+	border-bottom-width:1px;
+
+	position:relative;
+	
+	z-index:1000;
+}
+
+#top>#title{
+	font-size:2pc;
+}
+
+#top>#subtitle{
+	color:gray;
+	margin-left:5px;
+}
+
+#top>div{
+	display:inline;
+}
+
+#top>#menu {
+	margin-right: 5px;
+	margin-left: 5px;
+
+	position:absolute;
+	right:0px;
+	bottom:0px;
+}
+
+#top>#menu>.item {
+	color: gray;
+	
+	margin-right:10px;
+	
+	display:inline-block;
+	
+	cursor: pointer;
+}
+
+#top>#menu>a {
+	margin-right:10px;
+	color: gray;
+	text-decoration: none;
+}
+
+#top>#menu>a:hover{
+	color: lightgray;
+}
+
+
+#bottom {
+	position: fixed;
+	bottom:0px;
+	
+	width:100%;
+	
+	
+	text-align:center;
+	font-size:10px;
+
+	z-index:1000;
+}
+
+body>#windowContainer {
+	margin-top:50px;
+	margin-bottom:15px;
+	
+	padding: 5px;
+	
+	position: absolute;
+	
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	
+	overflow:hidden;
+}
+
+body>#windowContainer>.window {
+	background-image:url(../img/windowbackground.png);
+	background-attachment: fixed;
+
+	border-color:black;
+	border-style:solid;
+	border-width:1px;
+	
+	padding: 1px;
+	
+	position: absolute;
+	
+	min-height: 60px;
+	min-width: 300px;
+	
+	cursor: move;
+}
+
+body>#windowContainer>.window>.title{
+	font-family: Arial;
+	font-size: 12px;
+	
+	color:white;
+	
+	position:absolute;
+	
+	top:0px;
+	left:0px;
+	
+	padding:5px;
+}
+
+body>#windowContainer>.window>.button {
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 10px;
+	
+	text-align:center;
+	
+	width: 15px;
+	height: 15px;
+	
+	display: inline-block;
+	
+	padding: 1px;
+	margin: 2px;
+	
+	float:right;
+	
+	cursor: pointer;
+}
+
+body>#windowContainer>.window>.content {
+	position:absolute;
+	top:25px;
+	bottom:5px;
+	left:5px;
+	right:5px;
+	background-color:lightgray;
+        overflow:hidden;
+}

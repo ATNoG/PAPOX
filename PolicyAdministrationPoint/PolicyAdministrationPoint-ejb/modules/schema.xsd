@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="pt.fg.classfactory.modules"
+    xmlns:cf="pt.fg.classfactory.modules"
+    elementFormDefault="unqualified">
+
+    <xsd:element name="Modules" type="cf:ModulesType" />
+    <xsd:complexType name="ModulesType">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+            <xsd:element name="InfoRetreiver" type="cf:ModuleType" />
+            <xsd:element name="PolicyRetreiver" type="cf:ModuleType" />
+            <xsd:element name="Mapping" type="cf:ModuleType" />
+        </xsd:choice>
+    </xsd:complexType>
+    
+    <xsd:complexType name="ModuleType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="name" use="required" />
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+</xsd:schema>
