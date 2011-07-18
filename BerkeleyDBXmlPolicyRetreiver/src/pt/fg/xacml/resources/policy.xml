@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+=============================================================================
+ Brief   : Empty policy file
+ Authors : Francisco Gouveia <fgouveia@av.it.pt>
+ 
+ Berkeley DB XML Policy Retreiver Module for PAPOX (Policy Administration
+ Point for Oasis XACML)
+
+ Copyright (C) 2011 Universidade Aveiro
+ Copyright (C) 2011 Instituto de Telecomunicações - Pólo Aveiro
+ Copyright (C) 2011 Portugal Telecom Inovação
+
+ This software is distributed under a license. The full license
+ agreement can be found in the file LICENSE in this distribution.
+ This software may not be copied, modified, sold or distributed
+ other than expressed in the named license agreement.
+
+ This software is distributed without any warranty.
+=============================================================================
+-->
+<xacml:PolicySet  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xacml='urn:oasis:names:tc:xacml:3.0:core:schema:wd-17' xsi:schemaLocation='urn:oasis:names:tc:xacml:3.0:core:schema:wd-17 xacml-core-v3-schema-wd-17.xsd' PolicySetId="rootPolicy" PolicyCombiningAlgId="urn:oasis:names:tc:xacml:1.0:policy-combining-algorithm:permit-overrides" Version="1.0"><xacml:Target /></xacml:PolicySet>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+=============================================================================
+ Brief   : Policy file with some data for example purposes
+ Authors : Francisco Gouveia <fgouveia@av.it.pt>
+ 
+ Berkeley DB XML Policy Retreiver Module for PAPOX (Policy Administration
+ Point for Oasis XACML)
+
+ Copyright (C) 2011 Universidade Aveiro
+ Copyright (C) 2011 Instituto de Telecomunicações - Pólo Aveiro
+ Copyright (C) 2011 Portugal Telecom Inovação
+
+ This software is distributed under a license. The full license
+ agreement can be found in the file LICENSE in this distribution.
+ This software may not be copied, modified, sold or distributed
+ other than expressed in the named license agreement.
+
+ This software is distributed without any warranty.
+=============================================================================
+-->
+<xacml:PolicySet  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xacml='urn:oasis:names:tc:xacml:3.0:core:schema:wd-17' xsi:schemaLocation='urn:oasis:names:tc:xacml:3.0:core:schema:wd-17 xacml-core-v3-schema-wd-17.xsd' PolicySetId="rootPolicy" PolicyCombiningAlgId="urn:oasis:names:tc:xacml:1.0:policy-combining-algorithm:permit-overrides" Version="1.0">
+    <xacml:Target />
+    <xacml:PolicySet PolicySetId="Users" Version="1.0" PolicyCombiningAlgId="urn:oasis:names:tc:xacml:1.0:policy-combining-algorithm:permit-overrides">
+        <xacml:Target >
+            <xacml:AnyOf>
+                <xacml:AllOf>
+                    <xacml:Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                        <xacml:AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">
+                                    user
+                        </xacml:AttributeValue>
+                        <xacml:AttributeDesignator Category="urn:oasis:names:tc:xacml:1.0:subject-category:access-subject" AttributeId="group" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false" />
+                    </xacml:Match>
+                </xacml:AllOf>
+            </xacml:AnyOf>
+        </xacml:Target>
+        <xacml:Policy PolicyId="Access" Version="1.0" RuleCombiningAlgId="urn:oasis:names:tc:xacml:1.0:rule-combining-algorithm:permit-overrides">
+            <xacml:Target>
+                <xacml:AnyOf>
+                    <xacml:AllOf>
+                        <xacml:Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                            <xacml:AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">
+                                    access
+                            </xacml:AttributeValue>
+                            <xacml:AttributeDesignator Category="urn:oasis:names:tc:xacml:3.0:attribute-category:action" AttributeId="action" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false" />
+                        </xacml:Match>
+                    </xacml:AllOf>
+                </xacml:AnyOf>
+            </xacml:Target>
+            <xacml:Rule RuleId="AccessPages" Effect="Permit">
+                <xacml:Target>
+                    <xacml:AnyOf>
+                        <xacml:AllOf>
+                            <xacml:Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                                <xacml:AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">
+                                    index.html
+                                </xacml:AttributeValue>
+                                <xacml:AttributeDesignator Category="urn:oasis:names:tc:xacml:3.0:attribute-category:resource" AttributeId="page" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false" />
+                            </xacml:Match>
+                        </xacml:AllOf>
+                    </xacml:AnyOf>
+                </xacml:Target>
+            </xacml:Rule>
+        </xacml:Policy>
+    </xacml:PolicySet>
+    <xacml:Policy PolicyId="Administrators" Version="1.0" RuleCombiningAlgId="urn:oasis:names:tc:xacml:1.0:policy-combining-algorithm:permit-overrides">
+        <xacml:Target>
+            <xacml:AnyOf>
+                <xacml:AllOf>
+                    <xacml:Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                        <xacml:AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">
+                            administrator
+                        </xacml:AttributeValue>
+                        <xacml:AttributeDesignator Category="urn:oasis:names:tc:xacml:1.0:subject-category:access-subject" AttributeId="group" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false" />
+                    </xacml:Match>
+                </xacml:AllOf>
+            </xacml:AnyOf>
+        </xacml:Target>
+        <xacml:Rule RuleId="BanUser" Effect="Permit">
+            <xacml:Target>
+                <xacml:AnyOf>
+                    <xacml:AllOf>
+                        <xacml:Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                            <xacml:AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">
+                                ban
+                            </xacml:AttributeValue>
+                            <xacml:AttributeDesignator Category="urn:oasis:names:tc:xacml:3.0:attribute-category:action" AttributeId="action" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false" />
+                        </xacml:Match>
+                    </xacml:AllOf>
+                </xacml:AnyOf>
+            </xacml:Target>
+        </xacml:Rule>
+    </xacml:Policy>
+</xacml:PolicySet>
