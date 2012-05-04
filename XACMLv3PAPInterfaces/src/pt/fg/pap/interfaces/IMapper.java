@@ -1,5 +1,21 @@
 package pt.fg.pap.interfaces;
-
+//=============================================================================
+// Brief   : Plugin interface
+// Authors : Francisco Gouveia <fgouveia@av.it.pt>
+//-----------------------------------------------------------------------------
+// Mapping interface
+//
+// Copyright (C) 2011 Universidade Aveiro
+// Copyright (C) 2011 Instituto de Telecomunicações - Pólo Aveiro
+// Copyright (C) 2011 Portugal Telecom Inovação
+//
+// This software is distributed under a license. The full license
+// agreement can be found in the file LICENSE in this distribution.
+// This software may not be copied, modified, sold or distributed
+// other than expressed in the named license agreement.
+//
+// This software is distributed without any warranty.
+//=============================================================================
 import java.util.Set;
 import pt.fg.pap.operation.OperationResult;
 
