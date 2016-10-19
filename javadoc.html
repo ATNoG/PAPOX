@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+=============================================================================
+ Brief   : Web page of PAPOX project
+ Authors : Francisco Gouveia <fgouveia@av.it.pt>
+ 
+ PAPOX (Policy Administration Point for OASIS XACML)
+
+ Copyright (C) 2011 Universidade Aveiro
+ Copyright (C) 2011 Instituto de Telecomunicações - Pólo Aveiro
+ Copyright (C) 2011 Portugal Telecom Inovação
+
+ This software is distributed under a license. The full license
+ agreement can be found in the file LICENSE in this distribution.
+ This software may not be copied, modified, sold or distributed
+ other than expressed in the named license agreement.
+
+ This software is distributed without any warranty.
+=============================================================================
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="keywords" content="PAP XACML XACML3 XACMLv3 Policy Administration Point OASIS" />
+        <meta name="description" content="PAPOX is a Policy Administration Point for OASIS XACMLv3" />
+        <title>PAPOX - Policy Administration Point for OASIS XACMLv3</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+    </head>
+	<script language="javascript">
+		var javadoc;
+	</script>
+    <body onload="javadoc = document.getElementById('javadoc');">
+        <div id="top">
+            <div id="title">PAPOX</div>
+            <div id="subtitle">Policy Administration Point for OASIS XACMLv3</div>
+
+            <div id="menu">
+                <div class="item" onclick="window.location='index.html';">Project overview</div>|
+                <div class="item" onclick="window.location='involved.html';">Who's involved</div>|
+                <div class="item" onclick="window.location='modules.html';">Modules</div>|
+                <div class="item"><b>Java Doc</b></div>|
+                <div class="item" onclick="window.location='download.html';">Download</div>|
+                <div class="item" onclick="window.location='todo.html';">To do list</div>|
+                <div class="item" onclick="window.location='licence.html';">Licence</div>
+            </div>
+        </div>
+
+        <div id="windowContainer">
+            <h1>Java Doc</h1>
+            <div id="menu">
+                <ul>
+					<li class="item" onclick="javadoc.src='JavaDoc/PolicyAdministrationPoint/index.html';">J2EE Project - Policy Administration Point for Oasis XACML (PAPOX)</li>
+					<li class="item" onclick="javadoc.src='JavaDoc/XACMLv3PAPInterfaces/index.html';">Interfaces for plugins development</li>
+					<li class="item" onclick="javadoc.src='JavaDoc/OperationResult/index.html';">Module OperationResult</li>
+					<li class="item" onclick="javadoc.src='JavaDoc/JClassLoader/index.html';">Module for plugin loading (Java Class Loader)</li>
+					<li class="item" onclick="javadoc.src='JavaDoc/BDBXmlHelper/index.html';">Oracle Berkeley's DB XML wrapper (used in the implemented plugin)</li>
+				<ul>
+            </div>
+			<div style="position:absolute; bottom:10px; left:0px; right:0px; top:200px;">
+				<iframe id="javadoc" src="" width="100%" height="100%" frameborder="0"> </iframe>
+			</div>
+        </div>
+
+        <div id="bottom">
+            <p>Developed by <a href="mailto:fgouveia@av.it.pt">Francisco Gouveia</a> | Copyright &#64; 2011 Universidade de Aveiro, Instituto de Telecomunicações - Pólo Aveiro e Portugal Telecom Inovação</p>
+            <p><img src="img/ua.png" alt="Universidade de Aveiro" onclick="window.location='http://www.ua.pt'" /><img src="img/it.png" alt="Instituto de Telecomunicações" onclick="window.location='http://www.it.pt'" /><img src="img/ptin.png" alt="Portugal Telecom Inovação" onclick="window.location='http://ptinovacao.pt'" /></p>
+        </div>
+
+    </body>
+</html>

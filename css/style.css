@@ -1,0 +1,199 @@
+/*
+//=============================================================================
+// Brief   : Stylesheet for the web page of PAPOX
+// Authors : Francisco Gouveia <fgouveia@av.it.pt>
+//-----------------------------------------------------------------------------
+// PAPOX (Policy Administration Point for OASIS XACML) - Presentation Layer
+//
+// Copyright (C) 2011 Universidade Aveiro
+// Copyright (C) 2011 Instituto de Telecomunicações - Pólo Aveiro
+// Copyright (C) 2011 Portugal Telecom Inovação
+//
+// This software is distributed under a license. The full license
+// agreement can be found in the file LICENSE in this distribution.
+// This software may not be copied, modified, sold or distributed
+// other than expressed in the named license agreement.
+//
+// This software is distributed without any warranty.
+//=============================================================================
+*/
+
+/*
+    Document   : style
+    Created on : 25/Abr/2011, 10:12:34
+    Author     : Francisco Alexandre de Gouveia
+    Description:
+        Styles to define the template of Policy Administration Point, using a container with windows.
+*/
+
+a {
+	color: gray;
+}
+
+a:hover{
+	color: lightgray;
+}
+
+
+html, body {
+	margin:0px;
+	padding:0px;
+	height: 100%;
+        background-color: gray;
+        background-image: url("../img/windowbackground.png");
+}
+
+#top {
+	height: 30px;
+
+	padding:10px;
+	
+	border-bottom-style: solid;
+	border-bottom-color: gray;
+	border-bottom-width:1px;
+
+	position:relative;
+	
+	z-index:1000;
+        
+        background-color: white;
+}
+
+#top>#title{
+	font-size:2pc;
+}
+
+#top>#subtitle{
+	color:gray;
+	margin-left:5px;
+}
+
+#top>div{
+	display:inline;
+}
+
+#top>#menu {
+	margin-right: 5px;
+	margin-left: 5px;
+
+	position:absolute;
+	right:0px;
+	bottom:0px;
+}
+
+#windowContainer>#menu{
+	margin-right: 5px;
+	margin-left: 5px;
+	
+	display:inline-block;
+	
+}
+
+#menu .item {
+	color: gray;
+	
+	
+	cursor: pointer;
+}
+
+#menu div.item{
+	margin-right:10px;
+	
+	display:inline-block;
+	
+}
+
+#menu>a {
+	margin-right:10px;
+	color: gray;
+	text-decoration: none;
+}
+
+#menu>a:hover{
+	color: lightgray;
+}
+
+
+#bottom {
+	position: fixed;
+	bottom:0px;
+        height:100px;
+	
+	width:100%;
+	
+	
+	text-align:center;
+	font-size:10px;
+
+	z-index:1000;
+        
+        background-color: white;
+}
+
+body>#windowContainer {
+	margin-top:50px;
+	margin-bottom:100px;
+        margin-left: auto;
+        margin-right: auto;
+	
+	padding: 5px;
+	
+	position: absolute;
+	
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	
+	overflow:hidden;
+        
+        width: 700px;
+        
+        background-color: white;
+        background-image: url(../img/top.png);
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        
+        overflow: auto;
+}
+
+h1{
+    font-size: x-large;
+    border-bottom: darkgrey solid thin;
+}
+
+h2{
+    font-size: large;
+}
+
+h3{
+    font-size: medium;
+}
+
+div.modules{
+    padding-left:10px;
+}
+
+div.modules > h1{
+    font-size: medium;
+}
+
+div.modules > h2{
+    font-size: small;
+}
+
+div.module{
+    padding-left:10px;
+    border-left: lightgray solid medium;
+}
+
+div.module > h1{
+    font-size: large;
+    border-bottom: none;
+}
+
+div.module > h2{
+    font-size: small;
+    color: darkgray;
+}

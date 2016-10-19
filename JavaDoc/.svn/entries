@@ -1,0 +1,43 @@
+10
+
+dir
+16
+https://helios.av.it.pt/projects/papox/svn/PAPOXProject/trunk/JavaDoc
+https://helios.av.it.pt/projects/papox/svn
+
+
+
+2011-07-18T15:16:48.226618Z
+2
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+115bd558-cb3e-4a25-8521-28a3a68fd38e
+
+BDBXmlHelper
+dir
+
+JClassLoader
+dir
+
+OperationResult
+dir
+
+PolicyAdministrationPoint
+dir
+
+XACMLv3PAPInterfaces
+dir
+

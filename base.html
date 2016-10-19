@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+=============================================================================
+ Brief   : Web page of PAPOX project
+ Authors : Francisco Gouveia <fgouveia@av.it.pt>
+ 
+ PAPOX (Policy Administration Point for OASIS XACML)
+
+ Copyright (C) 2011 Universidade Aveiro
+ Copyright (C) 2011 Instituto de Telecomunicações - Pólo Aveiro
+ Copyright (C) 2011 Portugal Telecom Inovação
+
+ This software is distributed under a license. The full license
+ agreement can be found in the file LICENSE in this distribution.
+ This software may not be copied, modified, sold or distributed
+ other than expressed in the named license agreement.
+
+ This software is distributed without any warranty.
+=============================================================================
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="keywords" content="PAP XACML XACML3 XACMLv3 Policy Administration Point OASIS" />
+        <meta name="description" content="PAPOX is a Policy Administration Point for OASIS XACMLv3" />
+        <title>PAPOX - Policy Administration Point for OASIS XACMLv3</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="css/xacml.css" media="screen" />
+        <script type="text/javascript" src="js/windows.js"> </script>
+        <script type="text/javascript" src="js/engine.js"> </script>
+    </head>
+    <body onload="windowManager.init(document.getElementById('windowContainer'));">
+        <div id="top">
+            <div id="title">PAPOX</div>
+            <div id="subtitle">Policy Administration Point for OASIS XACMLv3</div>
+
+            <div id="menu">
+                <div class="item" onclick="openWindow('PAPOX project', 'overview', 800);">Project overview</div>|
+                <div class="item" onclick="openWindow('Who is involved', 'involved', 500);">Who's involved</div>|
+                <div class="item" onclick="openWindow('Implemented modules', 'modules', 500);">Modules</div>|
+                <div class="item" onclick="openWindow('To do list', 'todo', 500);">To do list</div>|
+                <div class="item" onclick="openWindow('Licence', 'licence', 800);">Licence</div>
+                <!--<div class="item" onclick="">Logout</div>-->
+            </div>
+        </div>
+
+        <div id="windowContainer">
+        </div>
+
+        <div id="bottom">
+			Developed by <a href="mailto:fgouveia@av.it.pt">Francisco Gouveia</a> | Copyright &#64; 2011 Universidade de Aveiro, Instituto de Telecomunicações - Pólo Aveiro e Portugal Telecom Comunicações
+        </div>
+
+    </body>
+</html>
